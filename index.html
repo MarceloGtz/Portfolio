@@ -1,328 +1,229 @@
 <!DOCTYPE html>
 <html lang="es-MX">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Hi my name is Jesús Marcelo Gutiérrez Bravo, im from Nuevo León, México
-        and a Frontend developer with knowledge around 2 year of studying about
-        Html5, Css3, JavaScript ES6+, React JS."
-    />
-    <meta name="author" content="Jesús Marcelo Gutiérrez Bravo" />
-    <!-- Favicon -->
-    <link
-      rel="shortcut icon"
-      href="./assets/icons/favicon.png"
-      type="image/x-icon"
-    />
-    <!-- Fontawesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-      crossorigin="anonymous"
-    />
-    <!-- Css Reset Pro -->
-    <link rel="stylesheet" href="./css/reset.css" />
-    <!-- Css -->
-    <link rel="stylesheet" href="./css/styles.css" />
-    <title>Marcelo Gtz | Frontend Dev</title>
-  </head>
 
-  <body>
-    <!-- HEADER -->
-    <header class="header">
-      <!-- NAVBAR -->
-      <nav class="navbar navbar-expand-sm fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"></a>
-          <button
-            class="header__button navbar-toggler"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar"
-          >
-            <span class="header__button-icon fa-solid fa-align-right"></span>
-          </button>
-          <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
-            id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel"
-          >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                Marcelo Gtz
-                <br />Frontend Developer
-              </h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a
-                    class="nav-link actived"
-                    aria-current="page"
-                    href="./index.html"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#skills">Skills</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact">Contact</a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    href="https://www.linkedin.com/in/marcelo-ezvo/"
-                    target="_blank"
-                    >LinkedIn</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    href="https://github.com/MarceloGtz"
-                    target="_blank"
-                    >Github</a
-                  >
-                </li>
-              </ul>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hi my name is Jesús Marcelo Gutiérrez Bravo, im from Nuevo León, México
+        and a Frontend developer with knowledge around 2 year of studying about
+        Html5, Css3, JavaScript ES6+, React JS." />
+  <meta name="author" content="Jesús Marcelo Gutiérrez Bravo" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/icons/favicon.png" type="image/x-icon" />
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet" />
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  <!-- Bootstrap -->
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <!-- Css Reset Pro -->
+  <link rel="stylesheet" href="./css/reset.css" />
+  <!-- Css -->
+  <link rel="stylesheet" href="./css/styles.css" />
+  <title>Portfolio | Marcelo Gutiérrez</title>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-sm fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button class="header__button navbar-toggler" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="header__button-icon fa-solid fa-align-right"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              Marcelo Gtz
+              <br />Frontend Developer
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link actived" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.linkedin.com/in/marcelo-ezvo/" target="_blank">LinkedIn</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/MarceloGtz" target="_blank">Github</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </nav>
-    </header>
-    <!-- MAIN -->
-    <main class="main">
-      <!-- MAIN CONTENT -->
-      <h2 class="main__title title">¡Welcome!</h2>
-      <!-- IMAGE -->
-      <img
-        class="main__photo shadow"
-        src="./assets/images/FotografìaFormal-HD-Circle.png"
-        alt="Marcelo Gtz"
-      />
-      <p class="main__text">
-        Hi my name is Jesús Marcelo Gutiérrez Bravo, im from Nuevo León, México
-        and a Frontend developer with knowledge around 2 year of studying about
-        Html5, Css3, JavaScript ES6+, React JS and other technologies like
-        Bootstrap 5 that complement the creation of beautiful and responsive
-        websites.
-      </p>
-    </main>
-    <!-- ABOUT -->
-    <section id="about" class="about">
-      <h2 class="about__title title">About Me</h2>
-      <p class="about__text">
-        I discovered the world of web development at July in 2020, when my
-        university launch a course named 'Introduction to the web development',
-        since that course i got fascinated about this technologies until now i
-        keep studying web technologies and methodologies, like Html with
-        semantic focus and best practices, Css with layout creation, bem and
-        responsive design, JavaScript with dom manipulation, a bit of logic
-        solving and es6 actualizations, React JS with redux and react-dom, Git
-        with remote repositories in Github and finally a bit of Bootstrap to
-        acelerate or use reliable components in my websites.
-      </p>
-      <div class="about__schools">
-        <div class="about__item">
-          <img
-            class="about__img"
-            src="./assets/icons/fime-logo.png"
-            alt="Fime"
-          />
-          <h2 class="about__school">Fime</h2>
-          <p class="about__time">2017 - Now</p>
-        </div>
-        <div class="about__item">
-          <img
-            class="about__img"
-            src="./assets/icons/academlo-logo.png"
-            alt="Academlo"
-          />
-          <h2 class="about__school">Academlo</h2>
-          <p class="about__time">2022 - Now</p>
-        </div>
       </div>
-    </section>
-    <!-- SKILLS -->
-    <section id="skills" class="skills">
-      <h2 class="skills__title title">Skills</h2>
-      <div class="skills__item">
-        <p class="skills__percentage skills__skill1">85%</p>
-        <p class="skills__tech">Web Design</p>
+    </nav>
+  </header>
+  <!-- MAIN -->
+  <main class="main">
+    <!-- MAIN CONTENT -->
+    <h2 class="main__title title">¡Welcome!</h2>
+    <!-- IMAGE -->
+    <img class="main__photo shadow" src="./assets/images/FotografìaFormal-HD-Circle.png" alt="Marcelo Gtz" />
+    <p class="main__text">
+      My name is Jesús Marcelo Gutiérrez Bravo, Im from Nuevo León, México and
+      a Frontend developer with hands-on experience of around half-year about
+      HTML5, CSS3, JavaScript and React Js with other technologies.
+    </p>
+  </main>
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <h2 class="about__title title">About Me</h2>
+    <p class="about__text">
+      I discovered the world of web development at July in 2021, when my
+      university launch a course named 'Introduction To Web Development',
+      since that course i got fascinated about this technologies that i keep
+      studying essentially React Js with Redux Toolkit and React-Router-Dom,
+      Git with remote repositories in Github.
+    <p class="about__text">
+      <br>
+      Excited to contribute my knowledge to the tech industry in a
+      professional enviroment, I love to collaborate and communicate code with my
+      colleagues, in addition to learning technologies that
+      complement and strengthen my frontend developer profile.
+    </p>
+    </p>
+    <div class="about__schools">
+      <div class="about__item">
+        <img class="about__img" src="./assets/icons/fime-logo.png" alt="Fime" />
+        <h2 class="about__school">Fime</h2>
+        <p class="about__time">2017 - Paused</p>
       </div>
-      <div class="skills__item">
-        <p class="skills__percentage skills__skill2">90%</p>
-        <p class="skills__tech">Html and Css</p>
+      <div class="about__item">
+        <img class="about__img" src="./assets/icons/academlo-logo.png" alt="Academlo" />
+        <h2 class="about__school">Academlo</h2>
+        <p class="about__time">2022 - Now</p>
       </div>
-      <div class="skills__item">
-        <p class="skills__percentage skills__skill3">65%</p>
-        <p class="skills__tech">Bootstrap</p>
+    </div>
+  </section>
+  <!-- SKILLS -->
+  <section id="skills" class="skills">
+    <h2 class="skills__title title">Skills</h2>
+    <div class="skills__item">
+      <p class="skills__percentage skills__skill1">85%</p>
+      <p class="skills__tech">Web Design</p>
+    </div>
+    <div class="skills__item">
+      <p class="skills__percentage skills__skill2">90%</p>
+      <p class="skills__tech">Html and Css</p>
+    </div>
+    <div class="skills__item">
+      <p class="skills__percentage skills__skill3">65%</p>
+      <p class="skills__tech">Bootstrap</p>
+    </div>
+    <div class="skills__item">
+      <p class="skills__percentage skills__skill4">78%</p>
+      <p class="skills__tech">JavaScript and React</p>
+    </div>
+    <div class="skills__item">
+      <p class="skills__percentage skills__skill5">70%</p>
+      <p class="skills__tech">English</p>
+    </div>
+  </section>
+  <!-- PROJECTS -->
+  <section id="projects" class="projects">
+    <h2 class="projects__title title">Projects</h2>
+    <div class="projects__ctn">
+      <div class="projects__card">
+        <img src="./assets/images/Pokédex-Marcelo-Gutiérrez.png" alt="Pokedex App" class="projects__ss" />
+        <h2 class="projects__card-title">Pokedex App</h2>
+        <p class="projects__card-description">
+          Here i did consume the pokeapi, to get the pokemons from every type,
+          with its name, types and base stats, then if you click on one you
+          get a specified page about the pokemon you clicked, also you can
+          find pokemons by id or name and filter by type.
+        </p>
+        <a class="projects__link" href="https://pokedex-lemon-theta.vercel.app/" target="_blank">Let's See</a>
       </div>
-      <div class="skills__item">
-        <p class="skills__percentage skills__skill4">78%</p>
-        <p class="skills__tech">JavaScript and React</p>
+      <div class="projects__card">
+        <img src="./assets/images/Rick-n-Morty-SS.png" alt="Rick and Morty App" class="projects__ss" />
+        <h2 class="projects__card-title">Rick and Morty App</h2>
+        <p class="projects__card-description">
+          In this project i did consume the rick and morty api, to get the
+          characters from every dimension, planet with its population to show
+          them with its name, status, origin and episodes appeared, in a grid
+          responsive way to make it easier to see.
+        </p>
+        <a class="projects__link" href="https://rick-and-morty-nine-sigma.vercel.app/" target="_blank">Let's See</a>
       </div>
-      <div class="skills__item">
-        <p class="skills__percentage skills__skill5">70%</p>
-        <p class="skills__tech">English</p>
+      <div class="projects__card">
+        <img src="./assets/images/Weather-SS.png" alt="Weather App" class="projects__ss" />
+        <h2 class="projects__card-title">Weather App</h2>
+        <p class="projects__card-description">
+          In this project I use an api to be able to take the data of the
+          user's location and show their location, the current weather in
+          centigrade and fahrenheit, in addition to extra data and a simple
+          icon of the current state of the weather.
+        </p>
+        <a class="projects__link" href="https://tourmaline-fudge-61a3b2.netlify.app/" target="_blank">Let's See</a>
       </div>
-    </section>
-    <!-- PROJECTS -->
-    <section id="projects" class="projects">
-      <h2 class="projects__title title">Projects</h2>
-      <div class="projects__ctn">
-        <div class="projects__card">
-          <img
-            src="./assets/images/pokedex-ss.webp"
-            alt="Pokedex App"
-            class="projects__ss"
-          />
-          <h2 class="projects__card-title">Pokedex App</h2>
-          <p class="projects__card-description">
-            Here i did consume the pokeapi, to get the pokemons from every type,
-            with its name, types and base stats, then if you click on one you
-            get a specified page about the pokemon you clicked, also you can
-            find pokemons by id or name and filter by type.
-          </p>
-          <a
-            class="projects__link"
-            href="https://chipper-mooncake-d7ed65.netlify.app/#/"
-            target="_blank"
-            >Let's See</a
-          >
-        </div>
-        <div class="projects__card">
-          <img
-            src="./assets/images/Rick-n-Morty-SS.png"
-            alt="Rick and Morty App"
-            class="projects__ss"
-          />
-          <h2 class="projects__card-title">Rick and Morty App</h2>
-          <p class="projects__card-description">
-            In this project i did consume the rick and morty api, to get the
-            characters from every dimension, planet with its population to show
-            them with its name, status, origin and episodes appeared, in a grid
-            responsive way to make it easier to see.
-          </p>
-          <a
-            class="projects__link"
-            href="https://tourmaline-fudge-61a3b2.netlify.app/"
-            target="_blank"
-            >Let's See</a
-          >
-        </div>
-        <div class="projects__card">
-          <img
-            src="./assets/images/Weather-SS.png"
-            alt="Weather App"
-            class="projects__ss"
-          />
-          <h2 class="projects__card-title">Weather App</h2>
-          <p class="projects__card-description">
-            In this project I use an api to be able to take the data of the
-            user's location and show their location, the current weather in
-            centigrade and fahrenheit, in addition to extra data and a simple
-            icon of the current state of the weather.
-          </p>
-          <a
-            class="projects__link"
-            href="https://tourmaline-fudge-61a3b2.netlify.app/"
-            target="_blank"
-            >Let's See</a
-          >
-        </div>
-        <div class="projects__card">
-          <img
-            src="./assets/images/users-form-ss.webp"
-            alt="Users Crud App"
-            class="projects__ss"
-          />
-          <h2 class="projects__card-title">Users Crud App</h2>
-          <p class="projects__card-description">
-            In this project I made a crud, with a form to enter the data and
-            buttons to edit and delete, i used my teacher api to make this
-            project posible, where i made as the same way as rick and morty app
-            a responsive grid to make this app look better.
-          </p>
-          <a
-            class="projects__link"
-            href="https://fascinating-griffin-222faa.netlify.app/"
-            target="_blank"
-            >Let's See</a
-          >
-        </div>
+      <div class="projects__card">
+        <img src="./assets/images/Crud-App-Marcelo-Gtz.png" alt="Users Crud App" class="projects__ss" />
+        <h2 class="projects__card-title">Users Crud App</h2>
+        <p class="projects__card-description">
+          In this project I made a crud, with a form to enter the data and
+          buttons to edit and delete, i used my teacher api to make this
+          project posible, where i made as the same way as rick and morty app
+          a responsive grid to make this app look better.
+        </p>
+        <a class="projects__link" href="https://fascinating-griffin-222faa.netlify.app/" target="_blank">Let's See</a>
       </div>
-    </section>
-    <!-- CONTACT -->
-    <h2 class="title">Contact</h2>
-    <section id="contact" class="contact">
-      <div class="contact__card">
-        <i class="fa-solid fa-square-phone"></i>
-        <p>+52 8180 8407 82</p>
-      </div>
-      <div class="contact__card">
-        <i class="fa-solid fa-square-envelope"></i>
-        <p>JMezvo@gmail.com</p>
-      </div>
-      <div class="contact__card">
-        <a
-          target="_blank"
-          href="https://www.linkedin.com/in/jes%C3%BAs-marcelo-guti%C3%A9rrez-bravo-933bb923a/"
-          ><i class="fa-brands fa-linkedin"></i>
-          <p>Linked In</p>
-        </a>
-      </div>
-      <div class="contact__card">
-        <a target="_blank" href="https://github.com/MarceloGtz"
-          ><i class="fa-brands fa-github-square"></i>
-          <p>Github</p>
-        </a>
-      </div>
-    </section>
-    <!-- FOOTER -->
-    <section class="footer">
-      <h1 class="footer__title">By Jesús Marcelo Gutiérrez Bravo</h1>
-    </section>
+    </div>
+  </section>
+  <!-- CONTACT -->
+  <h2 class="title">Contact</h2>
+  <section id="contact" class="contact">
+    <div class="contact__card">
+      <i class="fa-solid fa-square-phone"></i>
+      <p>+52 8180 8407 82</p>
+    </div>
+    <div class="contact__card">
+      <i class="fa-solid fa-square-envelope"></i>
+      <p>JMezvo@gmail.com</p>
+    </div>
+    <div class="contact__card">
+      <a target="_blank" href="https://www.linkedin.com/in/jes%C3%BAs-marcelo-guti%C3%A9rrez-bravo-933bb923a/"><i
+          class="fa-brands fa-linkedin"></i>
+        <p>Linked In</p>
+      </a>
+    </div>
+    <div class="contact__card">
+      <a target="_blank" href="https://github.com/MarceloGtz"><i class="fa-brands fa-github-square"></i>
+        <p>Github</p>
+      </a>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <section class="footer">
+    <h1 class="footer__title">By Jesús Marcelo Gutiérrez Bravo</h1>
+  </section>
+</body>
 
-    <!-- Bootstrap -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-      crossorigin="anonymous"
-    ></script>
-  </body>
 </html>
